@@ -15,7 +15,7 @@
 
 FROM devhub-docker.cisco.com/iox-docker/ir800/python-2.7.11
 
-ADD package_config.ini reposter.py start.sh https://raw.githubusercontent.com/bottlepy/bottle/0.12.17/bottle.py /
+ADD reposter.py start.sh https://raw.githubusercontent.com/bottlepy/bottle/0.12.17/bottle.py /
 RUN opkg update && \
     opkg install python-pip python-json && \
     pip install requests
